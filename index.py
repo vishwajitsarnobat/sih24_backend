@@ -105,7 +105,7 @@ def upload_video():
         }
 
         # Generate summary using Gemini API
-        summary_data = generate_summary(response_data, 'AIzaSyDj97xwlHatiROdoV8B0C5BOhJhnSe85Dk')
+        summary_data = generate_summary(response_data, 'api_key') # api_key not included for security purposes
         response_data['summary'] = summary_data
 
         return jsonify(response_data), 200
