@@ -1,3 +1,6 @@
-/assets
-/models
+/assets/weights/checkpoint_best_G.chkpt
+/assets/weights/MRI_GAN_weights.chkpt
 /sih
+/models/balanced_ppg.pth
+/models/shape_predictor_68_face_landmarks.dat
+/models/source.pth

@@ -1,0 +1,20 @@
+Model Download and Naming Instructions
+
+The following models need to be downloaded and stored in the specified folder. Please ensure the downloaded files are named as specified below:
+
+    MRI-GAN Model with tau = 0.3 and Generator with the Lowest Loss
+        Download Link:  https://drive.google.com/uc?id=1qEfI96SYOWCumzPdQlcZJZvtAW_OXUcH
+        File Name: checkpoint_best_G.chkpt
+
+    MRI Deepfake Detection Model
+        Download Link:  https://drive.google.com/uc?id=1xKzehNuq1B1th-_-U6OG9v2Q2Odws6VG
+        File Name: MRI_GAN_weights.chkpt
+
+Source Information:
+
+The models above are sourced from the following GitHub repository and research paper:
+
+    Paper: MRI-GAN: A Generalized Approach to Detect DeepFakes using Perceptual Image Assessment
+        Authors: Pratikkumar Prajapati and Chris Pollett
+        Year: 2022
+        ArXiv ID: 2203.00108
