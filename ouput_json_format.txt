@@ -1,0 +1,32 @@
+{
+    "video_metadata": {
+      "video_name": "0014_real.mp4",
+      "is_fake": "Real",
+      "fake_confidence": 0.93,
+      "real_confidence": 0.07,
+      "video_length": "00:05:30",
+      "frame_count": 108000,
+      "frame_rate": 30,
+      "resolution": "1920x1080",
+      "aspect_ratio": "16:9",
+      "file_size": "500MB",
+      "source" : "Gen-3_DF-UAV"
+      "thumbnail": "lkjjihbbkjnknklnkl(base64)"
+    },
+    "summary": {
+      "This is the overall summary"
+    }
+    "anomalies": {
+        "fake_score": ,
+        "lighting_score": ,
+        "misalignment_score": ,
+        "resolution_score" :
+    }
+    ppg: {
+        "ppg_signals": adkhnhd(base64),
+        "psd_signals": jdilwejdkwkl(base64),
+        "ppg_fake_confidence": "0.2741",
+        "ppg_real_confidence": "0.7259",
+        "ppg_result": "Real",
+    }
+  }

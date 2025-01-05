@@ -1,0 +1,52 @@
+assets: 'assets'
+MRI_GAN:
+  weights: 'weights/MRI_GAN_weights.chkpt'
+  model_params:
+    n_epochs: 100
+    batch_size: 128
+    lambda_pixel: 100
+    b1: 0.5
+    b2: 0.999
+    lr: 0.0002
+    tau: 0.3
+    imsize: 256
+    model_name: 'MRI_GAN'
+    test_sample_size: 16
+    chkpt_freq: 500
+    sample_gen_freq: 200
+    frac: 1 # fraction of data to use (with respect to real data)
+    losses_file: 'losses.pkl'
+    metadata_file: 'mri_metadata.pkl'
+    ssim_report_file: 'ssim_report_file.pkl'
+cnn_encoder:
+  default: 'tf_efficientnet_b0_ns'
+deep_fake:
+  training:
+    train_size: 1
+    valid_size: 1
+    test_size: 1
+    model_params:
+      model_name: 'DeepFakeDetectModel'
+      label_smoothing: 0.1
+      train_transform: 'simple' # simple or complex
+      batch_format: 'simple'
+      epochs: 20
+      learning_rate: 0.001
+      batch_size: 192
+      fp16: True
+      opt_level: 'O0'
+      dataset: 'mri'
+logging:
+  root_log_dir: logs
+  line_len: 80
+  model_info_log: 'model_info_and_results.log'
+  model_loss_info_log: 'model_losses.log'
+  model_acc_info_log: 'model_acc.log'
+  model_conf_matrix_csv: 'confusion_matrix.csv'
+  model_conf_matrix_png: 'confusion_matrix.png'
+  model_conf_matrix_normalized_csv: 'confusion_matrix_normalized.csv'
+  model_conf_matrix_normalized_png: 'confusion_matrix_normalized.png'
+  model_accuracy_png: 'model_accuracy.png'
+  model_loss_png: 'model_loss.png'
+  all_samples_pred_csv: 'all_samples_pred.csv'
+  model_roc_png: 'model_roc.png'
